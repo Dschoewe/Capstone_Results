@@ -1,0 +1,66 @@
+ 
+                                              HEC-RAS - River Analysis System
+ 
+ 
+Project File:  C:\Users\Douglas Schoewe\Documents\Downtown_Troy.prj
+ 
+Project Name:  Downtown_Troy
+ 
+ 
+Plan Name:     Plan 07
+ 
+Short ID:      Plan 07
+ 
+
+Starting Time:   09Nov2023 1200
+
+Ending Time:     09Nov2023 1300
+
+
+                ################################################
+                #                                              #
+                #                                              #
+                #       1D and 2D Unsteady Flow Module         #
+                #                                              #
+                #                                              #
+                #          HEC-RAS 6.4.1 June 2023             #
+                #                                              #
+                #             09NOV23 at 17:24:27              #
+                #                                              #
+                ################################################
+                
+ 
+ 
+ 
+
+
+
+                 ***   Volume Accounting for 1D Flow Area in Acre Feet   ***
+
+         US Inflow      DS Outflow       Lat Hydro        SA Hydro     Groundwater      Diversions   Precip Excess
+         *********      **********       *********        ********     ***********      **********   *************
+             41.46           38.46                                                                                                
+
+    Start 1D Reach  Final 1D Reach   Starting SA's      Final SA's
+    **************  **************   *************      **********
+            0.4039           1.422                                
+
+ 
+
+
+
+                 ***   Total Volume Accounting (for the entire model) in Acre Feet   ***
+
+Total Boundary Flux of Water In            41.46
+Total Boundary Flux of Water Out           38.46
+
+Starting Volume                           0.4039
+Ending Volume                              1.422
+
+
+                             Error   Percent Error
+                             *****   *************
+                         -1.981472           4.733
+
+
+

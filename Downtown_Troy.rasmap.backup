@@ -1,0 +1,314 @@
+<RASMapper>
+  <Version>2.0.0</Version>
+  <RASProjectionFilename Filename="F:\SkyEyeMaps\JHU_Capstone\Processed\Edited DTMs\Projection.prj" />
+  <Features Checked="True" Expanded="True">
+    <Layer Name="Profile Lines" Type="PolylineFeatureLayer" Filename=".\Features\Profile Lines.shp" />
+  </Features>
+  <Geometries Checked="True" Expanded="True">
+    <Layer Name="Great_Miami_River_Terrain" Type="RASGeometry" Checked="True" Expanded="True" Filename=".\Downtown_Troy.g02.hdf">
+      <Layer Type="RASRiver">
+        <LabelFeatures Checked="True" PercentPosition="0" rows="1" cols="2" r0c0="River" r0c1="Reach" Position="3" Color="-16777216" FontSize="8.25" />
+      </Layer>
+      <Layer Type="RASJunction">
+        <LabelFeatures Checked="True" PercentPosition="0" rows="1" cols="1" r0c0="Name" Position="3" Color="-16777216" FontSize="8.25" />
+      </Layer>
+      <Layer Type="RASXS" UnitsRiverStation="Meters" RiverStationDecimalPlaces="0">
+        <LabelFeatures Checked="True" PercentPosition="0" rows="1" cols="1" r0c0="River Station" Position="3" Color="-16777216" FontSize="8.25" />
+      </Layer>
+      <Layer Type="RASStorageArea">
+        <LabelFeatures Checked="True" PercentPosition="0" rows="1" cols="1" r0c0="Name" Position="3" Color="-16777216" FontSize="8.25" />
+      </Layer>
+      <Layer Type="MeshPerimeterLayer">
+        <LabelFeatures Checked="True" PercentPosition="0" rows="1" cols="1" r0c0="Name" Position="3" Color="-16777216" FontSize="8.25" />
+      </Layer>
+      <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+      <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Bridges/Culverts" />
+      <Layer Name="Gate Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+      <Layer Name="Gate Openings" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Inline Structures" />
+      <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+      <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Inline Structures" />
+      <Layer Name="Rating Curve Outlets" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Inline Structures" />
+      <Layer Name="Outlet Time Series" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Inline Structures" />
+      <Layer Name="Gate Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+      <Layer Name="Gate Openings" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Lateral Structures" />
+      <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+      <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Lateral Structures" />
+      <Layer Name="Rating Curve Outlets" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Lateral Structures" />
+      <Layer Name="Outlet Time Series" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Lateral Structures" />
+      <Layer Name="Gate Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+      <Layer Name="Gate Openings" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
+      <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+      <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
+      <Layer Name="Rating Curve Outlets" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
+      <Layer Name="Outlet Time Series" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
+      <Layer Type="StructureLayer" UnitsRiverStation="Meters" RiverStationDecimalPlaces="0" />
+      <Layer Type="FinalNValueLayer">
+        <ResampleMethod>near</ResampleMethod>
+        <Surface On="True" />
+      </Layer>
+      <Layer Name="Final Values" Type="InterpretationRasterizerLayer" Filename=".\Downtown_Troy.g02.hdf">
+        <ResampleMethod>near</ResampleMethod>
+        <Surface On="True" />
+      </Layer>
+      <Layer Name="Final Values" Type="InterpretationRasterizerLayer" Filename=".\Downtown_Troy.g02.hdf">
+        <ResampleMethod>near</ResampleMethod>
+        <Surface On="True" />
+      </Layer>
+    </Layer>
+  </Geometries>
+  <Plans Checked="True">
+    <Layer Name="100-year_Down_Town_Troy" Type="RASPlan" Filename=".\Downtown_Troy.p03" GeometryHDF=".\Downtown_Troy.g02.hdf">
+      <Layer Name="Encroachment Regions" Type="RASEncroachmentPolygons" Filename=".\Downtown_Troy.p03" />
+    </Layer>
+    <Layer Name="Plan 04" Type="RASPlan" Filename=".\Downtown_Troy.p04" GeometryHDF=".\Downtown_Troy.g02.hdf">
+      <Layer Name="Encroachment Regions" Type="RASEncroachmentPolygons" Filename=".\Downtown_Troy.p04" />
+    </Layer>
+    <Layer Name="Plan 05" Type="RASPlan" Filename=".\Downtown_Troy.p05" GeometryHDF=".\Downtown_Troy.g02.hdf">
+      <Layer Name="Encroachment Regions" Type="RASEncroachmentPolygons" Filename=".\Downtown_Troy.p05" />
+    </Layer>
+    <Layer Name="Plan 06" Type="RASPlan" Filename=".\Downtown_Troy.p06" GeometryHDF=".\Downtown_Troy.g02.hdf">
+      <Layer Name="Encroachment Regions" Type="RASEncroachmentPolygons" Filename=".\Downtown_Troy.p06" />
+    </Layer>
+    <Layer Name="Plan 07" Type="RASPlan" Filename=".\Downtown_Troy.p07" GeometryHDF=".\Downtown_Troy.g02.hdf">
+      <Layer Name="Encroachment Regions" Type="RASEncroachmentPolygons" Filename=".\Downtown_Troy.p07" />
+    </Layer>
+    <Layer Name="plan8beforedam" Type="RASPlan" Filename=".\Downtown_Troy.p08" GeometryHDF=".\Downtown_Troy.g02.hdf">
+      <Layer Name="Encroachment Regions" Type="RASEncroachmentPolygons" Filename=".\Downtown_Troy.p08" />
+    </Layer>
+  </Plans>
+  <EventConditions>
+    <Layer Name="Unsteady_Flow 100 year" Type="RASEventConditions" Filename=".\Downtown_Troy.u01.hdf" />
+    <Layer Name="Troy_1hour_1000" Type="RASEventConditions" Filename=".\Downtown_Troy.u02.hdf" />
+    <Layer Name="Troy_1hour_1000A" Type="RASEventConditions" Filename=".\Downtown_Troy.u03.hdf" />
+    <Layer Name="Troy_1hour_1000B" Type="RASEventConditions" Filename=".\Downtown_Troy.u04.hdf" />
+  </EventConditions>
+  <Results Checked="True" Expanded="True">
+    <Layer Name="100-year_Down_Town_Troy" Type="RASResults" Checked="True" Expanded="True" Filename=".\Downtown_Troy.p04.hdf">
+      <Layer Name="Event Conditions" Type="RASEventConditions" Filename=".\Downtown_Troy.p04.hdf">
+        <Layer Name="Wind Layer" Type="ResultWindLayer" Filename=".\Downtown_Troy.p04.hdf">
+          <ResampleMethod>near</ResampleMethod>
+          <Surface On="True" />
+          <Metadata BandIndex="0" SubDataset="" />
+        </Layer>
+      </Layer>
+      <Layer Type="RASGeometry" Filename=".\Downtown_Troy.p04.hdf">
+        <Layer Type="RASXS" UnitsRiverStation="Feet" RiverStationDecimalPlaces="0" />
+        <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+        <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Bridges/Culverts" />
+        <Layer Name="Gate Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+        <Layer Name="Gate Openings" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Inline Structures" />
+        <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+        <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Inline Structures" />
+        <Layer Name="Rating Curve Outlets" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Inline Structures" />
+        <Layer Name="Outlet Time Series" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Inline Structures" />
+        <Layer Name="Gate Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+        <Layer Name="Gate Openings" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Lateral Structures" />
+        <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+        <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Lateral Structures" />
+        <Layer Name="Rating Curve Outlets" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Lateral Structures" />
+        <Layer Name="Outlet Time Series" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Lateral Structures" />
+        <Layer Name="Gate Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+        <Layer Name="Gate Openings" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
+        <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+        <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
+        <Layer Name="Rating Curve Outlets" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
+        <Layer Name="Outlet Time Series" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
+        <Layer Type="StructureLayer" UnitsRiverStation="Feet" RiverStationDecimalPlaces="0" />
+        <Layer Type="FinalNValueLayer">
+          <ResampleMethod>near</ResampleMethod>
+          <Surface On="True" />
+        </Layer>
+        <Layer Name="Final Values" Type="InterpretationRasterizerLayer" Filename=".\Downtown_Troy.p04.hdf">
+          <ResampleMethod>near</ResampleMethod>
+          <Surface On="True" />
+        </Layer>
+        <Layer Name="Final Values" Type="InterpretationRasterizerLayer" Filename=".\Downtown_Troy.p04.hdf">
+          <ResampleMethod>near</ResampleMethod>
+          <Surface On="True" />
+        </Layer>
+      </Layer>
+      <Layer Name="Plan" Type="RASPlan" Filename=".\Downtown_Troy.p04.hdf" GeometryHDF=".\Downtown_Troy.p04.hdf">
+        <Layer Name="Encroachment Regions" Type="RASEncroachmentPolygons" Filename=".\Downtown_Troy.p04.hdf" />
+      </Layer>
+      <Layer Name="Depth" Type="RASResultsMap">
+        <Symbology>
+          <SurfaceFill Colors="-16711681,-16777077" Values="0,2" Stretched="True" AlphaTag="122" UseDatasetMinMax="False" RegenerateForScreen="False" />
+        </Symbology>
+        <MapParameters MapType="depth" ProfileIndex="2" ProfileName="09NOV2023 12:08:00" />
+      </Layer>
+      <Layer Name="Velocity" Type="RASResultsMap">
+        <Symbology>
+          <SurfaceFill Colors="-16777077,-16776961,-7278960,-256,-23296,-47872,-7667712" Values="0,2,4,6,8,10,15" Stretched="True" AlphaTag="201" UseDatasetMinMax="False" RegenerateForScreen="False" />
+        </Symbology>
+        <MapParameters MapType="velocity" ProfileIndex="0" ProfileName="09NOV2023 12:00:00" />
+      </Layer>
+      <Layer Name="WSE" Type="RASResultsMap">
+        <MapParameters MapType="elevation" ProfileIndex="9" ProfileName="09NOV2023 12:36:00" />
+      </Layer>
+    </Layer>
+    <Layer Name="Plan 07" Type="RASResults" Checked="True" Expanded="True" Filename=".\Downtown_Troy.p07.hdf">
+      <Layer Name="Event Conditions" Type="RASEventConditions" Filename=".\Downtown_Troy.p07.hdf">
+        <Layer Name="Wind Layer" Type="ResultWindLayer" Filename=".\Downtown_Troy.p07.hdf">
+          <ResampleMethod>near</ResampleMethod>
+          <Surface On="True" />
+          <Metadata BandIndex="0" SubDataset="" />
+        </Layer>
+      </Layer>
+      <Layer Type="RASGeometry" Filename=".\Downtown_Troy.p07.hdf">
+        <Layer Type="RASXS" UnitsRiverStation="Feet" RiverStationDecimalPlaces="0" />
+        <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+        <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Bridges/Culverts" />
+        <Layer Name="Gate Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+        <Layer Name="Gate Openings" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Inline Structures" />
+        <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+        <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Inline Structures" />
+        <Layer Name="Rating Curve Outlets" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Inline Structures" />
+        <Layer Name="Outlet Time Series" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Inline Structures" />
+        <Layer Name="Gate Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+        <Layer Name="Gate Openings" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Lateral Structures" />
+        <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+        <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Lateral Structures" />
+        <Layer Name="Rating Curve Outlets" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Lateral Structures" />
+        <Layer Name="Outlet Time Series" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Lateral Structures" />
+        <Layer Name="Gate Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+        <Layer Name="Gate Openings" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
+        <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
+        <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
+        <Layer Name="Rating Curve Outlets" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
+        <Layer Name="Outlet Time Series" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
+        <Layer Type="StructureLayer" UnitsRiverStation="Feet" RiverStationDecimalPlaces="0" />
+        <Layer Type="FinalNValueLayer">
+          <ResampleMethod>near</ResampleMethod>
+          <Surface On="True" />
+        </Layer>
+        <Layer Name="Final Values" Type="InterpretationRasterizerLayer" Filename=".\Downtown_Troy.p07.hdf">
+          <ResampleMethod>near</ResampleMethod>
+          <Surface On="True" />
+        </Layer>
+        <Layer Name="Final Values" Type="InterpretationRasterizerLayer" Filename=".\Downtown_Troy.p07.hdf">
+          <ResampleMethod>near</ResampleMethod>
+          <Surface On="True" />
+        </Layer>
+      </Layer>
+      <Layer Name="Plan" Type="RASPlan" Filename=".\Downtown_Troy.p07.hdf" GeometryHDF=".\Downtown_Troy.p07.hdf">
+        <Layer Name="Encroachment Regions" Type="RASEncroachmentPolygons" Filename=".\Downtown_Troy.p07.hdf" />
+      </Layer>
+      <Layer Name="Depth" Type="RASResultsMap">
+        <Symbology>
+          <SurfaceFill Colors="-16711681,-16777077" Values="0,2" Stretched="True" AlphaTag="176" UseDatasetMinMax="False" RegenerateForScreen="False" />
+        </Symbology>
+        <MapParameters MapType="depth" ProfileIndex="0" ProfileName="09NOV2023 12:00:00" />
+      </Layer>
+      <Layer Name="Velocity" Type="RASResultsMap">
+        <Symbology>
+          <SurfaceFill Colors="-16777077,-16776961,-7278960,-256,-23296,-47872,-7667712" Values="0,2.5,5,7.5,10,12.5,15" Stretched="True" AlphaTag="148" UseDatasetMinMax="False" RegenerateForScreen="False" />
+        </Symbology>
+        <MapParameters MapType="velocity" ProfileIndex="6" ProfileName="09NOV2023 12:24:00" />
+      </Layer>
+      <Layer Name="WSE" Type="RASResultsMap">
+        <Symbology>
+          <SurfaceFill Colors="-16711681,-66048,-65536" Values="248.025054931641,251.700668334961,255.376281738281" Stretched="True" AlphaTag="255" UseDatasetMinMax="True" RegenerateForScreen="False" />
+        </Symbology>
+        <MapParameters MapType="elevation" ProfileIndex="7" ProfileName="09NOV2023 12:28:00" />
+      </Layer>
+      <Layer Name="Depth" Type="RASResultsMap" Filename=".\Plan 07\Depth (Max).vrt">
+        <Symbology>
+          <SurfaceFill Colors="-16711681,-16777077" Values="0,2" Stretched="True" AlphaTag="0" UseDatasetMinMax="False" RegenerateForScreen="False" />
+        </Symbology>
+        <MapParameters MapType="depth" LayerName="Depth (Max)" OutputMode="Stored Current Terrain" StoredFilename=".\Plan 07\Depth (Max).vrt" ProfileIndex="2147483647" ProfileName="Max" OverwriteOutputFilename="Depth (Max)" />
+      </Layer>
+    </Layer>
+  </Results>
+  <MapLayers Checked="True" Expanded="True">
+    <Layer Name="Site_6_Baseline_Downtown_Dam-Orthomosaic" Type="ImageLayer" Filename="F:\SkyEyeMaps\JHU_Capstone\Processed\Site_6_Baseline_Downtown_Dam-Orthomosaic.tiff">
+      <ResampleMethod>near</ResampleMethod>
+    </Layer>
+  </MapLayers>
+  <Terrains Checked="True" Expanded="True">
+    <Layer Name="Terrain (15).Clone" Type="TerrainLayer" Expanded="True" Filename=".\Terrain\Terrain (15).Clone.hdf">
+      <Symbology>
+        <SurfaceFill Colors="-10039894,-256,-16744448,-23296,-7667712,-5952982,-8355712,-1286" Values="239.9267578125,251.45108925612,252.561029785253,253.305865852945,254.719740715145,255.629793195092,256.347349410384,262.0234375" Stretched="True" AlphaTag="115" UseDatasetMinMax="False" RegenerateForScreen="False" />
+      </Symbology>
+      <ResampleMethod>near</ResampleMethod>
+      <Surface On="True" />
+      <Layer Name="Modifications" Type="ElevationModificationGroup" Filename=".\Terrain\Terrain (15).Clone.hdf">
+        <Layer Name="bridges_over_land" Type="PolygonElevationModificationLayer" Filename=".\Terrain\Terrain (15).Clone.hdf">
+          <Layer Name="Control Points" Type="ElevationControlPointLayer" Filename=".\Terrain\Terrain (15).Clone.hdf" />
+        </Layer>
+        <Layer Name="GMR" Type="PolygonElevationModificationLayer" Filename=".\Terrain\Terrain (15).Clone.hdf">
+          <Layer Name="Control Points" Type="ElevationControlPointLayer" Filename=".\Terrain\Terrain (15).Clone.hdf" />
+        </Layer>
+      </Layer>
+    </Layer>
+    <Layer Name="Terrain (15)" Type="TerrainLayer" Checked="True" Filename=".\Terrain\Terrain (15).hdf">
+      <ResampleMethod>near</ResampleMethod>
+      <Surface On="True" />
+    </Layer>
+    <Layer Name="Terrain (15).Clone (1)" Type="TerrainLayer" Expanded="True" Filename=".\Terrain\Terrain (15).Clone (1).hdf">
+      <Symbology>
+        <Contour On="True" Interval="5" Color="-1" />
+      </Symbology>
+      <ResampleMethod>near</ResampleMethod>
+      <Surface On="True" />
+      <Layer Name="Modifications" Type="ElevationModificationGroup" Filename=".\Terrain\Terrain (15).Clone (1).hdf">
+        <Layer Name="bridges_over_land" Type="PolygonElevationModificationLayer" Filename=".\Terrain\Terrain (15).Clone (1).hdf">
+          <Layer Name="Control Points" Type="ElevationControlPointLayer" Filename=".\Terrain\Terrain (15).Clone (1).hdf" />
+        </Layer>
+        <Layer Name="GMR" Type="PolygonElevationModificationLayer" Filename=".\Terrain\Terrain (15).Clone (1).hdf">
+          <Layer Name="Control Points" Type="ElevationControlPointLayer" Filename=".\Terrain\Terrain (15).Clone (1).hdf" />
+        </Layer>
+      </Layer>
+    </Layer>
+  </Terrains>
+  <CurrentView>
+    <MaxX>739201.010896019</MaxX>
+    <MinX>739002.497931643</MinX>
+    <MaxY>4436035.23690823</MaxY>
+    <MinY>4435866.1527354</MinY>
+  </CurrentView>
+  <VelocitySettings>
+    <Density>1.5</Density>
+    <Lifetime>100</Lifetime>
+    <Radius>0.75</Radius>
+    <Method>2</Method>
+    <Timestep>1</Timestep>
+    <StaticColor>Black</StaticColor>
+    <SpeedRelativeToZoom>False</SpeedRelativeToZoom>
+  </VelocitySettings>
+  <AnimationSettings>
+    <DelayTimer>901</DelayTimer>
+  </AnimationSettings>
+  <Units>US Customary</Units>
+  <RenderMode>sloping</RenderMode>
+  <FullExtentPlotting>
+    <ExtentUserDefined>
+      <MaxX>739326.220396018</MaxX>
+      <MinX>738551.36834846</MinX>
+      <MaxY>4436266.27890323</MaxY>
+      <MinY>4435827.92870882</MinY>
+    </ExtentUserDefined>
+  </FullExtentPlotting>
+  <MarksWarpMethod>False</MarksWarpMethod>
+  <CurrentSettings>
+    <ProjectSettings>
+      <RiverStationUnits>Meters</RiverStationUnits>
+      <RiverStationDecimalPlaces>0</RiverStationDecimalPlaces>
+      <HorizontalDecimalPlaces>1</HorizontalDecimalPlaces>
+      <VerticalDecimalPlaces>2</VerticalDecimalPlaces>
+      <XSMaxPoints>450</XSMaxPoints>
+      <LSMaxPoints>1000</LSMaxPoints>
+      <ProfilePointMinCount>0</ProfilePointMinCount>
+      <ShowLegend>True</ShowLegend>
+      <ShowNorthArrow>False</ShowNorthArrow>
+      <ShowScaleBar>True</ShowScaleBar>
+      <ShowGreaterThanInLegend>False</ShowGreaterThanInLegend>
+      <MeshTolerance_MinFaceLength>0.05</MeshTolerance_MinFaceLength>
+      <MeshTolerance_EnsureCellPoint>False</MeshTolerance_EnsureCellPoint>
+    </ProjectSettings>
+    <Folders>
+      <TerrainDestinationFolder>.\Terrain</TerrainDestinationFolder>
+      <TerrainSourceFolder>F:\SkyEyeMaps\JHU_Capstone\Processed</TerrainSourceFolder>
+      <AddDataFolder>F:\SkyEyeMaps\JHU_Capstone\Processed</AddDataFolder>
+    </Folders>
+  </CurrentSettings>
+</RASMapper>

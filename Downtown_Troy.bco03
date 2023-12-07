@@ -1,0 +1,66 @@
+ 
+                                              HEC-RAS - River Analysis System
+ 
+ 
+Project File:  C:\Users\Douglas Schoewe\Documents\Downtown_Troy.prj
+ 
+Project Name:  Downtown_Troy
+ 
+ 
+Plan Name:     100-year_Down_Town_Troy
+ 
+Short ID:      100-year_Down_Town_Troy
+ 
+
+Starting Time:   22Oct2023 1200
+
+Ending Time:     22Oct2023 1300
+
+
+                ################################################
+                #                                              #
+                #                                              #
+                #       1D and 2D Unsteady Flow Module         #
+                #                                              #
+                #                                              #
+                #          HEC-RAS 6.4.1 June 2023             #
+                #                                              #
+                #             30OCT23 at 19:55:48              #
+                #                                              #
+                ################################################
+                
+ 
+ 
+ 
+
+
+
+                 ***   Volume Accounting for 1D Flow Area in Acre Feet   ***
+
+         US Inflow      DS Outflow       Lat Hydro        SA Hydro     Groundwater      Diversions   Precip Excess
+         *********      **********       *********        ********     ***********      **********   *************
+             21.07         0.03163                                                                                                
+
+    Start 1D Reach  Final 1D Reach   Starting SA's      Final SA's
+    **************  **************   *************      **********
+             1.306         0.08832                                
+
+ 
+
+
+
+                 ***   Total Volume Accounting (for the entire model) in Acre Feet   ***
+
+Total Boundary Flux of Water In            21.07
+Total Boundary Flux of Water Out         0.03163
+
+Starting Volume                            1.306
+Ending Volume                            0.08832
+
+
+                             Error   Percent Error
+                             *****   *************
+                        -22.260360           99.46
+
+
+
